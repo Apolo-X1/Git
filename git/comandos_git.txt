@@ -1,0 +1,92 @@
+#--global is potional
+git config --global user.name "here go the name"
+git config --global user.email "here go the email"
+
+importante!
+git config --global core.autocrlf true  #(true for windows, input for mac or linux)
+
+########################################################
+
+#change default branch
+git config --global init.defaultBranch "here go the name"
+
+
+#create repository
+git init 
+
+#status
+git status
+
+#create commit
+git commit
+
+#show commit historial
+git log
+
+#modify commit (alone in local repository)
+git commit --amend
+
+###########################################################
+
+#change text edit 
+git config --global core.editor "code --wait" #here we asociate visual studio code
+
+###########################################################
+
+#ondu commit (if you need add more things to the commit)
+git reset --soft HEAD~1
+
+###########################################################
+
+
+Branches in git
+
+"""we have to be careful when we create a new branch, why?
+
+because a version will be created but of the branch in which we are."""
+
+
+#create branch""
+git branch "branch name"
+
+#show all Branches
+git branch
+
+#switch from one branch to another
+git checkout "branch name"
+
+#create branch and change to that branch 
+git checkout -b "branch name"
+
+
+#change branch name
+#first we will stay in the branch
+git checkout "branch name"  #for go to the branch
+git branch -m "branch name"  #change name
+
+#another method for change branch name
+git branch -m "branch name" "new branch name"
+
+
+#delete branch
+#this is alone for local branch
+git branch -d "branch name"
+
+
+##############################################################
+
+#merge Branches
+#for that you must be in the branch that will receive the merge
+git merge "name of the branch we wanna merge"
+
+
+
+
+############################################################
+Tags or version
+
+#tag
+git tag -a "name"
+
+#add message
+git tag -a "name" -m "message"

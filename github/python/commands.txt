@@ -1,0 +1,26 @@
+#show origin
+git remote or git remote -v
+
+#send changes to github
+git push origin "branch name to send"
+
+#recive changes from github
+git fetch origin
+
+#download changes made by someone else in the github repository
+git pull origin main
+
+#check if changes have been made in the repository (it's just looking, it doesn't download them)
+git checkout origin/main
+#for exit
+git checkout main
+
+
+
+###########################################################################
+
+#create repository and send to github
+git remote add origin https://github.com/DavidJDGT/hello-py.git
+
+#fork repository
+
